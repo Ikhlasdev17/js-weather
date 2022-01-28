@@ -4,12 +4,17 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: 'montserrat', sans-serif;
   background-image: url("pexels-frans-van-heerden-624015.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position:top center;
-
+  min-height: 100vh;
 }
 
 .app-wrap{
@@ -104,10 +109,16 @@ main {
 }
 
 @media (max-width: 991px){
+  html {
+    font-size: 55%;
+  }
+  .main-temp .temp{
+    font-size: 75px;
+  }
   .app-wrap{
     display: grid;
     grid-template-columns: 100%;
     min-height: 100vh;
-
+    background-repeat: no-repeat;
   }
 }
